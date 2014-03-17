@@ -25,7 +25,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  padding:2em 3em;
+  padding:2%;
   display: none;
   overflow-y: auto;
   //overflow: hidden;
@@ -95,15 +95,16 @@
 }
 
 .user {
-  margin: auto;
+  margin:2% 5%;
   z-index: 20;
   .transition;
-  left: 0;
-  width: 100%;
-  height: 4em;
-  position: fixed;
-  top: 0;
-  margin-bottom: 2em;
+  /*left: 0;*/
+  width: 90%;
+  /*height: 4em;*/
+  /*position: fixed;*/
+  /*top: 0;*/
+  /*margin-bottom: 2em;*/
+  
 }
 
 footer {
@@ -132,8 +133,8 @@ footer {
 .user-image {
   border: 3px solid #FFF;
   border-radius: 90px;
-  width: 2.5em;
-  height: 2.5em;
+  width: 4em;
+  height: 4em;
   position: relative;
   overflow: hidden;
   background: #CCC;
@@ -142,7 +143,7 @@ footer {
 
 .user-image:before {
   position: absolute;
-  font-size: 2em;
+  font-size: 3em;
   bottom: 0;
   left: 50%;
   margin-left: -0.5em;
@@ -195,18 +196,22 @@ footer {
 
 .user-info {
   margin-left: 0.4em;
+  padding: 0.15em 0;
+  line-height: 1.2;
+  color: #FFF;
 }
 
 .user .user-pseudo {
-  font-size: 1.25em;
-  color: #FFF;
+  font-size: 1.5em;
 }
 
 .user-name {
-  color: #FFF;
-  margin-top: -0.4em;
   display: block;
   font-size: 1.1em;
+}
+
+.user-mail {
+  color:#999;
 }
 
 .user-config-layout {
@@ -307,9 +312,8 @@ footer {
   /*text-align: center;*/
   position: relative;
   z-index: 10;
-  width: 100%;
-  //padding-left: 12em;
-  padding-top: 6em;
+  margin:4% 5%;
+  width: 90%;
   letter-spacing: -5px;
   > * {
     letter-spacing: normal;
