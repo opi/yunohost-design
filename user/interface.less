@@ -374,6 +374,9 @@ footer {
   float: right;
 }
 
+.listing-apps .box {
+  /*width:29%;*/
+}
 .listing-apps .box a {
   display: block;
   min-height: 2em;
@@ -381,6 +384,10 @@ footer {
   /*font-size: 3em;*/
   width: 2.7em;
   height: 2.7em;
+
+    /*width:100%;*/
+    /*height:100%;*/
+
   font-size: 4em; 
   position: relative;
   top: 0;
@@ -422,6 +429,7 @@ footer {
     height: 100%;
     top: 5px;
     left: 2.7em;
+      left: 100%;
     box-shadow: 5px 0px 10px rgba(0,0,0,0.4);
     -webkit-transform: skew(0, 45deg);
        -moz-transform: skew(0, 45deg);
@@ -433,6 +441,7 @@ footer {
     width: 100%;
     height: 0;
     top: 2.7em;
+      top:100%;
     left: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     -webkit-transform: skew(45deg, 0);
@@ -442,6 +451,42 @@ footer {
             transform: skew(45deg, 0);
   }
 } 
+
+
+@media only screen and (max-width: 30em) {
+
+  .user-menu {
+    float:none;
+    /*text-align: left;*/
+    /*max-width:30%;*/
+    a {
+      padding:1.35em;
+    }
+  }
+  .user-container {
+    /*max-width:69%;float:left;*/
+  }
+
+  .apps {
+    margin:2em 2%;
+    width:96%;
+  }
+  .interface .apps .box {
+    /*margin:0 0 0.75em 0.75em;*/
+  }
+  .listing-apps .box a {
+    width:2em;
+    height:2em;
+    font-size:3.5em;
+    padding:0.15em;
+    word-break: keep-all;
+    word-wrap: keep-all;
+    white-space: nowrap;
+
+    span {margin-left:0;}
+  }
+}
+
 
 .listing-apps li span {
   display: block;
